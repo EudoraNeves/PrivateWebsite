@@ -1,0 +1,120 @@
+<template>
+  <div class="skills">
+    <div class="skill" v-for="(skill, index) in skills" :key="index">
+      <div class="text-center">
+        <v-progress-circular
+          :rotate="-90"
+          :size="110"
+          :width="5"
+          :value="skill.paintValue"
+          color="#00BCD4"
+        >{{ skill.value }}</v-progress-circular>
+      </div>
+      <div class="skillInfo">
+        <div class="skillName">{{ skill.name }}</div>
+        <div class="skillDegreeYear">{{ skill.degree }}, {{ skill.year }}</div>
+        <div class="skillDescription">{{ skill.description }}</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "canvass",
+
+  components: {},
+
+  props: {},
+
+  data() {
+    return {
+      skills: [
+        {
+          paintValue: "90",
+          value: "90%",
+          name: "html5",
+          degree: "Excellent",
+          year: "1 year",
+          description:
+            "Able to develop independently with HTML and HTML5, had some practice daily"
+        },
+        {
+          paintValue: "80",
+          value: "80%",
+          name: "CSS3",
+          degree: "good",
+          year: "1 year",
+          description:
+            "Able to develop independently with CSS and CSS3, had some practice daily"
+        },
+        {
+          paintValue: "60",
+          value: "60%",
+          name: "Vue.js",
+          degree: "so-so",
+          year: "1 year",
+          description:
+            "Understand basic concepts of Vue.js, able to develop independently. Had some practice daily."
+        },
+        {
+          paintValue: "40",
+          value: "40%",
+          name: "Javascript (ES6)",
+          degree: "raw",
+          year: "1 year",
+          description:
+            "Understand basic concepts of Javascript, had some practice daily but need to check for help online frequently."
+        },
+        {
+          paintValue: "40",
+          value: "40%",
+          name: "JQuery",
+          degree: "raw",
+          year: "1 year",
+          description:
+            "Understand basic concepts of JQuery, had some practice daily but need to check for help online frequently."
+        }
+      ]
+    };
+  },
+
+  methods: {}
+};
+</script>
+
+<style scoped>
+.skills {
+  display: flex;
+}
+
+.skill {
+  width: 320px;
+  min-height: 300px;
+}
+
+.v-progress-circular {
+  margin: 1rem;
+}
+
+.skillPercentage {
+  line-height: 110px;
+}
+
+.skillName {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skillDegreeYear {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.skillDescription {
+  color: #666;
+  font-size: 14px;
+}
+</style>
