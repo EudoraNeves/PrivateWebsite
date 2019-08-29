@@ -1,7 +1,7 @@
 <template>
   <div class="intro">
     <div class="selfie">
-      <img src="../assets/selfie.jpg" />
+      <img src="" />
     </div>
     <div class="introText">
       <h1 class="name">{{ name }}</h1>
