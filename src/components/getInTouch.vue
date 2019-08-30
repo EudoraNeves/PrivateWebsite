@@ -1,7 +1,7 @@
 <template>
   <div class="getInTouch">
     <div class="profile">
-      <img src="" />
+      <img :src="`${publicPath}selfie.jpg`" />
     </div>
     <div class="text">
       <p>I'm currently taking on freelance work. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
@@ -42,7 +42,11 @@ import mediaIcons from "@/components/mediaIcons.vue";
 export default {
   name: "getInTouch",
   props: {},
-
+  data () {
+      return {
+          publicPath: process.env.BASE_URL
+      }
+  },
   components: {
     mediaIcons
   }

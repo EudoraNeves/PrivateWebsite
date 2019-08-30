@@ -1,7 +1,7 @@
 <template>
   <div class="intro">
     <div class="selfie">
-      <img src="" />
+      <img :src="`${publicPath}selfie.jpg`" />
     </div>
     <div class="introText">
       <h1 class="name">{{ name }}</h1>
