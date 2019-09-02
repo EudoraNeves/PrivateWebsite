@@ -47,6 +47,7 @@ export default {
 .contact {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 30px;
 }
@@ -55,9 +56,8 @@ export default {
   margin-right: 30px;
   display: flex;
   flex-direction: row;
-  font-size: 1.3vw;
-  line-height: 24px;
-  width: max-content;
+  font-size: 16px;
+  /* width: max-content; */
   /* width: -moz-max-content;
   width: -webkit-max-content; */
 }

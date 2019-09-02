@@ -16,11 +16,11 @@
         <intro
           name="Eudora Neves"
           profession="Web Front-end Developer"
-          briefIntro="My major was English and I've been trying to take full use of it, but unfortunately, I was not quite sure what I want until now. I feel appreciated with my husband who helped bring me to software developing and i found it's my direction to go."
+          briefIntro="My major was English and I've been trying to take full use of it, but unfortunately, I was not quitegit ps sure what I want until now. I feel appreciated with my husband who helped bring me to software developing and i found it's my direction to go."
         ></intro>
       </div>
       <div class="thirdLine">
-        <contact email="1052288068@qq.com" phone="+86 15355156713" web="https://privatewebsite-juh03hpvt.now.sh/#/"></contact>
+        <contact email="1052288068@qq.com" phone="+86 15355156713" web="https://privatewebsite-haina.now.sh/#/"></contact>
       </div>
       <div class="fourthLine">
         <navigators></navigators>
@@ -368,7 +368,6 @@ h3 {
 
 .briefIntro {
   width: 90% !important;
-  font-size: 3vw;
 
 }
 

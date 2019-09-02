@@ -57,6 +57,7 @@ export default {
 }
 
 .briefIntro {
+  font-size: 16px;
   width: 800px;
   margin: 0 auto;
   margin-bottom: 1rem;
