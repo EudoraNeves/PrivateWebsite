@@ -48,6 +48,7 @@ export default {
 .projectsContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   color: white;
   text-align: left;
 }

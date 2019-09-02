@@ -86,6 +86,8 @@ export default {
 <style scoped>
 .skills {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .skill {

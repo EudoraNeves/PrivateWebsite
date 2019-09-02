@@ -27,7 +27,8 @@ export default {
           school: "sololearn",
           schoolWebsite: "https://www.sololearn.com",
           time: "2018/8 ~ present",
-          description: "<a href='https://www.sololearn.com/'>Sololearn</a> is the largest online community of mobile code learners.<br /><br /> Course finished: <b>HTML</b>, <b>CSS</b>, <b>JS</b>, <b>Jquery</b><br /><br/>Other skills: <b>Vue.js</b>"
+          description:
+            "<a href='https://www.sololearn.com/'>Sololearn</a> is the largest online community of mobile code learners.<br /><br /> Course finished: <b>HTML</b>, <b>CSS</b>, <b>JS</b>, <b>Jquery</b><br /><br/>Other skills: <b>Vue.js</b>"
         },
 
         {
@@ -39,11 +40,22 @@ export default {
         }
       ]
     };
+  },
+
+  methods: {
+    changeVhtmlStyle () {
+      let textHrefSoloLearn = document.getElementsByClassName('description')[0].childNodes[0]
+      textHrefSoloLearn.style.color = '#000000'
+    }
+  },
+
+  mounted: function() {
+    this.changeVhtmlStyle()
   }
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .education {
   display: flex;
   flex-direction: row;
@@ -60,8 +72,7 @@ export default {
   color: #666;
 }
 
-.description a {
-  /* text-decoration: none;
-  font-weight: 800;   */
+.education .educationItem .description:chi {
+  color: #000000 !important;
 }
 </style>

@@ -4,9 +4,11 @@
       <img :src="`${publicPath}selfie.jpg`" />
     </div>
     <div class="text">
-      <p>I'm currently taking on freelance work. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
       <p>
-        <strong>I can help with the following</strong>
+        I'm a new mummy and started self learning of web front-end developing since my pregnancy in March, 2018. During the time staying at home, I spent around 4 hours daily during weekdays on learning and practising. My husband, a senior developer thinks I'm doing okay and should be good for the first job. <strong>So contact me if you're interested in hiring (currently living in Shanghai)</strong>. 
+      </p>
+      <p>
+        <strong>Also, if you're just seeking for a small projects building, I'm also here. I can help with following: </strong>
       </p>
       <ul class="services">
         <li>

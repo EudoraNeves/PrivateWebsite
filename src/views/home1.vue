@@ -4,7 +4,9 @@
       <div class="firstLine">
         <mediaIcons iconClassName="mediaHeader"></mediaIcons>
         <div class="hireDownload">
-          <a href="tel: 15355156713"><hireDownload buttonText="hire me"></hireDownload></a>
+          <a href="tel: 15355156713">
+            <hireDownload buttonText="hire me"></hireDownload>
+          </a>
           <a :href="`${publicPath}cv_eudora.docx`" download>
             <hireDownload buttonText="download my resume"></hireDownload>
           </a>
@@ -18,7 +20,7 @@
         ></intro>
       </div>
       <div class="thirdLine">
-        <contact email="1052288068@qq.com" phone="+86 15355156713" web="#"></contact>
+        <contact email="1052288068@qq.com" phone="+86 15355156713" web="https://privatewebsite-juh03hpvt.now.sh/#/"></contact>
       </div>
       <div class="fourthLine">
         <navigators></navigators>
@@ -162,7 +164,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 * {
   font-family: "roboto", sans-serif;
   line-height: 1.5;
@@ -176,7 +178,7 @@ a {
 
 button:hover {
   text-shadow: 0 0 10px #ffffff;
-  background-color: #00A5BB;
+  background-color: #00a5bb;
 }
 
 .header {
@@ -227,8 +229,6 @@ button:hover {
 
 .mediaBottom a svg path {
   fill: #8a8a8a;
-}
-.mediasHeader:nth-child(3) {
 }
 
 .hireDownload {
@@ -332,7 +332,52 @@ h3 {
 .cssAnimationWork {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 414px) {
+  .mediaHeader {
+    width: 24px;
+    height: 24px;
+    line-height: 24px !important;
+
+    a svg {
+      width: 14px !important;
+      height: 14px !important;
+    }
+  }
+
+  .hireDownload button {
+    height: 24px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .getInTouch {
+    flex-direction: column !important;
+
+    .profile img {
+      margin-left: 25%;
+    }
+  }
+
+.briefIntro {
+  width: 90% !important;
+  font-size: 3vw;
+
+}
+
+
+  .navItem a {
+  font-size: 2vw;
+}
+
+
 }
 </style>
 

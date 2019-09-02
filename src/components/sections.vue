@@ -17,7 +17,7 @@ export default {
 <style scoped>
 
 .section {
-    width: 1050px;
+    width: 55%;
     min-height: 500px;
     margin: 0 auto 45px auto;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
