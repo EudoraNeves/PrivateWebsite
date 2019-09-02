@@ -33,6 +33,7 @@ export default {
   color: #f5f5f5;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

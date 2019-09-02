@@ -1,5 +1,5 @@
 <template>
-  <div class="medias" :ref="iconsClassName">
+  <div :class="iconsClassName" :ref="iconsClassName">
     <div :class="iconClassName" v-for="(icon, index) in icons" :key="index">
       <a :href="icon.mediaLink" target="_blank">
         <svg style="width:16px;height:16px" viewBox="0 0 24 24">
@@ -45,18 +45,18 @@ export default {
     };
   },
   methods: {
-    wechat() {
-      let wechat = document.getElementsByClassName("medias")[0].childNodes[2];
-      console.log("222");
-      wechat.addEventListener("click", alertWechat);
-      function alertWechat() {
-        alert("add me in weChat: eudora_neves");
-        wechat.childNodes[0].removeAttribute("href");
-      }
-    },
-    mounted: function() {
-      this.wechat();
-    }
+    // wechat() {
+    //   let wechat = document.getElementsByClassName("medias")[0].childNodes[2];
+    //   wechat.addEventListener("click", alertWechat);
+    //   function alertWechat() {
+    //     wechat.childNodes[0].removeAttribute("href");
+    //     alert("add me in weChat: eudora_neves");
+    //   }
+    // }
+  },
+
+  mounted() {
+    // this.wechat();
   }
 };
 </script>

@@ -7,7 +7,7 @@
       <div class="projectText">
         <div class="projectName">{{ project.name }}</div>
         <div class="projectTech">{{ project.tech }}</div>
-        <a class="projectSource">{{ project.source }}</a>
+        <a class="projectSource" :href="project.source" target="_blank">View on github</a>
       </div>
     </div>
   </div>
@@ -22,22 +22,29 @@ export default {
       projects: [
         {
           imgUrl: require("../assets/imgs/projectWeather.png"),
-          name: "worldwide weekly weather",
+          name: "weekly worldwide weather",
           tech: "html, css, jQuery",
-          source: "view on github"
+          source: "https://github.com/EudoraNeves/weather"
         },
-        {
-          imgUrl: require("../assets/imgs/projectSBL.png"),
-          name: "SBL company page",
-          tech: "html, css",
-          source: "view on github"
-        },
+        // {
+        //   imgUrl: require("../assets/imgs/projectSBL.png"),
+        //   name: "SBL company page",
+        //   tech: "html, css",
+        //   source: "view on github"
+        // },
         {
           imgUrl: require("../assets/imgs/projectArtifact.png"),
           name: "SBL company page",
           tech: "html, css, jQuery",
-          source: "view on github"
+          source: "https://github.com/EudoraNeves/artifact"
+        },
+                {
+          imgUrl: require("../assets/imgs/projectPrivateWeb.png"),
+          name: "Private website",
+          tech: "Vue.js, html, css, javascript",
+          source: "https://github.com/EudoraNeves/PrivateWebsite"
         }
+
       ]
     };
   }

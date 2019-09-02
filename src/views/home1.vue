@@ -2,7 +2,7 @@
   <div class="page">
     <div class="header">
       <div class="firstLine">
-        <mediaIcons iconClassName="mediaHeader"></mediaIcons>
+        <mediaIcons iconsClassName="mediasHeader" iconClassName="mediaHeader"></mediaIcons>
         <div class="hireDownload">
           <a href="tel: 15355156713">
             <hireDownload buttonText="hire me"></hireDownload>
@@ -20,7 +20,11 @@
         ></intro>
       </div>
       <div class="thirdLine">
-        <contact email="1052288068@qq.com" phone="+86 15355156713" web="https://privatewebsite-haina.now.sh/#/"></contact>
+        <contact
+          email="1052288068@qq.com"
+          phone="+86 15355156713"
+          web="https://privatewebsite-haina.now.sh/#/"
+        ></contact>
       </div>
       <div class="fourthLine">
         <navigators></navigators>
@@ -121,15 +125,20 @@ export default {
   },
 
   methods: {
-    // wechat() {
-    //   let wechat = document.getElementsByClassName("mediasHeader")[0]
-    //     .childNodes[2];
-    //   wechat.addEventListener("click", alertWechat);
-    //   function alertWechat() {
-    //     alert("add me in weChat: eudora_neves");
-    //     wechat.childNodes[0].removeAttribute("href");
-    //   }
-    // },
+    wechat() {
+      let wechatHeader = document.getElementsByClassName("mediasHeader")[0]
+        .childNodes[2];
+      let wechatBottom = document.getElementsByClassName("mediasBottom")[0]
+        .childNodes[2];
+      wechatHeader.addEventListener("click", alertWechat);
+      wechatBottom.addEventListener("click", alertWechat);
+
+      function alertWechat() {
+        alert("add me in weChat: eudora_neves");
+        wechatHeader.childNodes[0].removeAttribute("href");
+        wechatBottom.childNodes[0].removeAttribute("href");
+      }
+    },
     downloadFile() {
       axios({
         url: "../assets/imgs/cv_eudora.docx",
@@ -158,7 +167,7 @@ export default {
     // }
   },
   mounted: function() {
-    // this.wechat();
+    this.wechat();
     // this.changeSVG();
   }
 };
@@ -197,8 +206,9 @@ button:hover {
   padding-bottom: 120px;
   background-color: #00bcd4;
 }
-.medias {
+.mediasHeader, .mediasBottom {
   padding-left: 15px;
+  display: flex;
 }
 
 .mediaHeader {
@@ -349,7 +359,7 @@ h3 {
   }
 
   .hireDownload button {
-    height: 24px;
+    min-height: 24px;
     font-size: 10px;
     line-height: 12px;
   }
@@ -366,17 +376,17 @@ h3 {
     }
   }
 
-.briefIntro {
-  width: 90% !important;
+  .briefIntro {
+    width: 90% !important;
+  }
 
-}
+  .navigators .navItem {
+    padding-right: 10px;
 
-
-  .navItem a {
-  font-size: 2vw;
-}
-
-
+    a {
+      font-size: 11px;
+    }
+  }
 }
 </style>
 
