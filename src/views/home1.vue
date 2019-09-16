@@ -1,5 +1,14 @@
 <template>
   <div class="page">
+    <button @click="backToTop()" id="myBtn" title="Go to top">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path
+          fill="rgba(255,255,0,0.6)"
+          stroke="#fff"
+          d="M16,13V21H8V13H2L12,3L22,13H16M7,11H10V19H14V11H17L12,6L7,11Z"
+        />
+      </svg>
+    </button>
     <div class="header">
       <div class="firstLine">
         <mediaIcons iconsClassName="mediasHeader" iconClassName="mediaHeader"></mediaIcons>
@@ -20,11 +29,7 @@
         ></intro>
       </div>
       <div class="thirdLine">
-        <contact
-          email="1052288068@qq.com"
-          phone="+86 15355156713"
-          web="https://privatewebsite-haina.now.sh/#/"
-        ></contact>
+        <contact email="1052288068@qq.com" phone="+86 15355156713" web="https://haina.website"></contact>
       </div>
       <div class="fourthLine">
         <navigators></navigators>
@@ -139,6 +144,7 @@ export default {
         wechatBottom.childNodes[0].removeAttribute("href");
       }
     },
+
     downloadFile() {
       axios({
         url: "../assets/imgs/cv_eudora.docx",
@@ -152,6 +158,34 @@ export default {
         document.body.appendChild(link);
         link.click();
       });
+    },
+
+    topBtnAppear() {
+      //Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+    },
+
+    backToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
     // changeSVG() {
@@ -166,8 +200,10 @@ export default {
     //   console.log(bottomSVGWidth)
     // }
   },
+
   mounted: function() {
     this.wechat();
+    this.topBtnAppear();
     // this.changeSVG();
   }
 };
@@ -175,6 +211,9 @@ export default {
 
 <style lang="scss">
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "roboto", sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -192,7 +231,6 @@ button:hover {
 
 .header {
   /* height: 717px; */
-  background-color: purple;
   color: white;
   display: flex;
   flex-direction: column;
@@ -206,7 +244,8 @@ button:hover {
   padding-bottom: 120px;
   background-color: #00bcd4;
 }
-.mediasHeader, .mediasBottom {
+.mediasHeader,
+.mediasBottom {
   padding-left: 15px;
   display: flex;
 }
@@ -387,6 +426,26 @@ h3 {
       font-size: 11px;
     }
   }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #c9c9c2; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px 20px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 </style>
 

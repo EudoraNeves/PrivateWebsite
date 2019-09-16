@@ -72,7 +72,7 @@ export default {
   color: #666;
 }
 
-.education .educationItem .description:chi {
+.description a {
   color: #000000 !important;
 }
 </style>
