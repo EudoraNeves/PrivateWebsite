@@ -426,6 +426,40 @@ h3 {
       font-size: 11px;
     }
   }
+  .v-timeline-item__divider {
+    display: none !important;
+  }
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--before,
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(2n):not(.v-timeline-item--after) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+
+  .v-timeline-item__body {
+    max-width: 100% !important;
+    margin-right: -40px !important;
+    .v-card__text {
+      font-size: 12px !important;
+    }
+  }
+
+  .v-timeline-item__opposite {
+    max-width: calc(40% - 48px) !important;
+    text-align: left !important;
+    margin-left: -50px !important;
+    padding-left: -50px !important;
+    font-size: 13px !important;
+    .time {
+      font-size: 12px !important;
+    }
+  }
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse):before {
+    left: calc(15% - 13px) !important;
+  }
 }
 
 #myBtn {
