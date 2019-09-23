@@ -385,6 +385,26 @@ h3 {
   justify-content: space-between;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #c9c9c2; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px 20px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 @media only screen and (max-width: 414px) {
   .mediaHeader {
     width: 24px;
@@ -448,38 +468,18 @@ h3 {
   }
 
   .v-timeline-item__opposite {
-    max-width: calc(40% - 48px) !important;
+    max-width: calc(40% - 46px) !important;
     text-align: left !important;
     margin-left: -50px !important;
     padding-left: -50px !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
     .time {
-      font-size: 12px !important;
+      font-size: 10px !important;
     }
   }
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse):before {
-    left: calc(15% - 13px) !important;
+    left: calc(15% - 15px) !important;
   }
-}
-
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #c9c9c2; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 5px 20px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
 }
 </style>
 
