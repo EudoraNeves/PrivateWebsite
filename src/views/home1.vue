@@ -471,6 +471,12 @@ h3 {
       font-size: 11px;
     }
   }
+
+  .projectsContainer {
+    .project {
+      min-width: 80%;
+    }
+  }
   .v-timeline-item__divider {
     display: none !important;
   }
