@@ -1,13 +1,13 @@
 <template>
   <div class="projectsContainer">
-    <div class="project" v-for="(project, index) in projects" :key="index">
+    <div class="project" v-for="(web, index) in webs" :key="index">
       <figure class="figure">
-        <img :src="project.imgUrl" alt />
+        <img :src="require('../assets/imgs/' + web + '.png')" />
       </figure>
       <div class="projectText">
-        <div class="projectName">{{ project.name }}</div>
-        <div class="projectTech">{{ project.tech }}</div>
-        <a class="projectSource" :href="project.source" target="_blank">View on github</a>
+        <div class="projectName">{{ $t(web + '-name') }}</div>
+        <div class="projectTech">{{ $t(web + '-tech') }}</div>
+        <a class="projectSource" :href="$t(web + '-source')" target="_blank">{{ $t('github') }}</a>
       </div>
     </div>
   </div>
@@ -19,33 +19,7 @@ export default {
   props: {},
   data() {
     return {
-      projects: [
-        {
-          imgUrl: require("../assets/imgs/projectWeather.png"),
-          name: "weekly worldwide weather",
-          tech: "html, css, jQuery",
-          source: "https://github.com/EudoraNeves/weather"
-        },
-        // {
-        //   imgUrl: require("../assets/imgs/projectSBL.png"),
-        //   name: "SBL company page",
-        //   tech: "html, css",
-        //   source: "view on github"
-        // },
-        {
-          imgUrl: require("../assets/imgs/projectArtifact.png"),
-          name: "SBL company page",
-          tech: "html, css, jQuery",
-          source: "https://github.com/EudoraNeves/artifact"
-        },
-                {
-          imgUrl: require("../assets/imgs/projectPrivateWeb.png"),
-          name: "Private website",
-          tech: "Vue.js, html, css, javascript",
-          source: "https://github.com/EudoraNeves/PrivateWebsite"
-        }
-
-      ]
+      webs: ['weather', 'artifact', 'eudora'],
     };
   }
 };

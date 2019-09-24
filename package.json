@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -12,12 +13,15 @@
     "sass": "^1.22.10",
     "sass-loader": "^7.2.0",
     "vue": "^2.6.10",
+    "vue-i18n": "^8.14.1",
     "vue-router": "^3.0.3",
     "vuetify": "^2.0.7"
   },
   "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-service": "^3.10.0",
+    "vue-cli-plugin-i18n": "^0.6.0",
     "vue-template-compiler": "^2.6.10"
   },
   "postcss": {

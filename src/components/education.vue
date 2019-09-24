@@ -1,11 +1,11 @@
 <template v-slot:education>
   <div class="education">
-    <div class="educationItem" v-for="(education, index) in educations" :key="index">
-      <h3 class="degree">{{ education.degree }}</h3>
-      <div class="construction">{{ education.school }}</div>
-      <div class="time">{{ education.time }}</div>
+    <div class="educationItem" v-for="(school, index) in schools" :key="index">
+      <h3 class="degree">{{ $t(school + '-degree') }}</h3>
+      <div class="construction">{{ $t(school + '-school') }}</div>
+      <div class="time">{{ $t(school + '-time') }}</div>
       <br />
-      <div class="description" v-html="education.description"></div>
+      <div class="description" v-html="$t(school + '-description')"></div>
     </div>
   </div>
 </template>
@@ -21,36 +21,19 @@ export default {
   },
   data() {
     return {
-      educations: [
-        {
-          degree: "web front-end developing",
-          school: "sololearn",
-          schoolWebsite: "https://www.sololearn.com",
-          time: "2018/8 ~ present",
-          description:
-            "<a href='https://www.sololearn.com/'>Sololearn</a> is the largest online community of mobile code learners.<br /><br /> Course finished: <b>HTML</b>, <b>CSS</b>, <b>JS</b>, <b>Jquery</b><br /><br/>Other skills: <b>Vue.js</b>"
-        },
-
-        {
-          degree: "Educational English",
-          school: "Huaiyin normal university",
-          schoolWebsite: "http://www.hytc.edu.cn/",
-          time: "2011/9 - 2015/6",
-          description: ""
-        }
-      ]
+      schools: ['sololearn', 'university'],
     };
   },
 
   methods: {
-    changeVhtmlStyle () {
-      let textHrefSoloLearn = document.getElementsByClassName('description')[0].childNodes[0]
-      textHrefSoloLearn.style.color = '#000000'
-    }
+    // changeVhtmlStyle () {
+    //   let textHrefSoloLearn = document.getElementsByClassName('description')[0].childNodes[0]
+    //   textHrefSoloLearn.style.color = '#000000'
+    // }
   },
 
   mounted: function() {
-    this.changeVhtmlStyle()
+    // this.changeVhtmlStyle()
   }
 };
 </script>

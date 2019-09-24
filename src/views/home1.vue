@@ -13,20 +13,25 @@
       <div class="firstLine">
         <mediaIcons iconsClassName="mediasHeader" iconClassName="mediaHeader"></mediaIcons>
         <div class="hireDownload">
+          <div class="locale-changer">
+            <select v-model="$i18n.locale">
+              <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.abbreviation">
+                <img :src="lang.flag" />
+                {{ lang.text }}
+              </option>
+            </select>
+          </div>
+
           <a href="tel: 15355156713">
-            <hireDownload buttonText="hire me"></hireDownload>
+            <hireDownload :buttonText="$t('buttonText1')"></hireDownload>
           </a>
           <a :href="`${publicPath}cv_eudora.docx`" download>
-            <hireDownload buttonText="download my resume"></hireDownload>
+            <hireDownload :buttonText="$t('buttonText2')"></hireDownload>
           </a>
         </div>
       </div>
       <div class="secondLine">
-        <intro
-          name="Eudora Neves"
-          profession="Web Front-end Developer"
-          briefIntro="My major was English and I've been trying to take full use of it, but unfortunately, I was not quitegit ps sure what I want until now. I feel appreciated with my husband who helped bring me to software developing and i found it's my direction to go."
-        ></intro>
+        <intro :name="$t('name')" :profession="$t('profession')" :briefIntro="$t('briefIntro')"></intro>
       </div>
       <div class="thirdLine">
         <contact email="1052288068@qq.com" phone="+86 15355156713" web="https://haina.website"></contact>
@@ -35,34 +40,33 @@
         <navigators></navigators>
       </div>
     </div>
-
     <div class="contents">
       <section id="experienceSection">
-        <h2 class="sectionTitle">work experience</h2>
+        <h2 class="sectionTitle">{{ $t('work-experience') }}</h2>
         <div class="sectionContent">
           <timeline></timeline>
         </div>
       </section>
       <section id="educationSection">
-        <h2 class="sectionTitle">education / training</h2>
+        <h2 class="sectionTitle">{{ $t('education-training') }}</h2>
         <div class="sectionContent">
           <education></education>
         </div>
       </section>
       <section id="skillsSection">
-        <h2 class="sectionTitle">skills</h2>
+        <h2 class="sectionTitle">{{ $t('skills') }}</h2>
         <div class="sectionContent">
           <skill></skill>
         </div>
       </section>
       <section id="recommendationSection">
-        <h2 class="sectionTitle">recommendation letters</h2>
+        <h2 class="sectionTitle">{{ $t('recommendation') }}</h2>
         <div class="sectionContent">
           <recommendation></recommendation>
         </div>
       </section>
       <section id="projectsSection">
-        <h2 class="sectionTitle">projects</h2>
+        <h2 class="sectionTitle">{{ $t('projects') }}</h2>
         <div class="sectionContent projectContent">
           <projects></projects>
           <div class="cssAnimation">
@@ -75,7 +79,7 @@
         </div>
       </section>
       <section id="contactSection">
-        <h2 class="sectionTitle">Get in Touch</h2>
+        <h2 class="sectionTitle">{{ $t('get-in-touch') }}</h2>
         <div class="sectionContent">
           <getInTouch></getInTouch>
         </div>
@@ -108,7 +112,19 @@ export default {
 
   data() {
     return {
-      publicPath: process.env.BASE_URL
+      publicPath: process.env.BASE_URL,
+      langs: [
+        {
+          abbreviation: "cn",
+          text: "中文",
+          flag: require("../assets/imgs/china.png")
+        },
+        {
+          abbreviation: "en",
+          text: "English",
+          flag: require("../assets/imgs/uk.png")
+        }
+      ]
     };
   },
 
@@ -368,6 +384,7 @@ h3 {
   flex-wrap: wrap;
 }
 
+//CSS animation
 .cssAnimation {
   display: flex;
   flex-direction: column;
@@ -405,6 +422,14 @@ h3 {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
+//language switch
+.locale-changer {
+  color: #000000;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+  outline: none;
+}
 @media only screen and (max-width: 414px) {
   .mediaHeader {
     width: 24px;

@@ -4,12 +4,8 @@
       <img :src="`${publicPath}selfie.jpg`" />
     </div>
     <div class="text">
-      <p>
-        I'm a new mummy and started self learning of web front-end developing since my pregnancy in March, 2018. During the time staying at home, I spent around 4 hours daily during weekdays on learning and practising. My husband, a senior developer thinks I'm doing okay and should be good for the first job. <strong>So contact me if you're interested in hiring (currently living in Shanghai)</strong>. 
-      </p>
-      <p>
-        <strong>Also, if you're just seeking for a small projects building, I'm also here. I can help with following: </strong>
-      </p>
+      <p v-html="$t('self-introduction')"></p>
+      <p v-html="$t('service')"></p>
       <ul class="services">
         <li>
           <svg style="width:16px;height:16px" viewBox="0 0 24 24">
@@ -17,7 +13,7 @@
               fill="#00BCD4"
               d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"
             />
-          </svg>website modification / rebuiding
+          </svg> {{ $t('service1') }}
         </li>
         <li>
           <svg style="width:16px;height:16px" viewBox="0 0 24 24">
@@ -25,12 +21,12 @@
               fill="#00BCD4"
               d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"
             />
-          </svg>mini program developing
+          </svg> {{ $t('service2') }}
         </li>
       </ul>
       <p>
-        Drop me a line at
-        <a href="mailto:1052288068@qq.com">1052288068@qq.com</a> or call me at
+        {{ $t('email') }}
+        <a href="mailto:1052288068@qq.com">1052288068@qq.com</a> {{ $t('call') }}
         <a href="tel:008615355156713">+86 15355156713</a>
       </p>
       <mediaIcons iconsClassName="mediasBottom" iconClassName="mediaBottom"></mediaIcons>
@@ -44,10 +40,10 @@ import mediaIcons from "@/components/mediaIcons.vue";
 export default {
   name: "getInTouch",
   props: {},
-  data () {
-      return {
-          publicPath: process.env.BASE_URL
-      }
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    };
   },
   components: {
     mediaIcons
@@ -55,7 +51,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .getInTouch {
   display: flex;
   flex-direction: row;
@@ -96,5 +92,4 @@ svg {
 path {
   fill: #666 !important;
 }
-
 </style>

@@ -1,22 +1,22 @@
 <template>
   <div class="navigators">
     <div class="navItem">
-      <a href="#experienceSection">Experience</a>
+      <a href="#experienceSection">{{ $t('nav-experience') }}</a>
     </div>
     <div class="navItem">
-      <a href="#educationSection">Education</a>
+      <a href="#educationSection">{{ $t('nav-education') }}</a>
     </div>
     <div class="navItem">
-      <a href="#skillsSection">Skills</a>
+      <a href="#skillsSection">{{ $t('skills') }}</a>
     </div>
     <div class="navItem">
-      <a href="#recommendationSection">Recommendation</a>
+      <a href="#recommendationSection">{{ $t('nav-recommendation') }}</a>
     </div>
     <div class="navItem">
-      <a href="#projectsSection">Projects</a>
+      <a href="#projectsSection">{{ $t('projects') }}</a>
     </div>
     <div class="navItem">
-      <a href="#contactSection">Contact</a>
+      <a href="#contactSection">{{ $t('nav-contact') }}</a>
     </div>
   </div>
 </template>

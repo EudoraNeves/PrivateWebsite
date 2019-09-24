@@ -1,19 +1,19 @@
 <template>
   <div class="skills">
-    <div class="skill" v-for="(skill, index) in skills" :key="index">
+    <div class="skill" v-for="(tech, index) in techs" :key="index">
       <div class="text-center">
         <v-progress-circular
           :rotate="-90"
           :size="110"
           :width="5"
-          :value="skill.paintValue"
+          :value="$t(tech + '-paintValue')"
           color="#00BCD4"
-        >{{ skill.value }}</v-progress-circular>
+        >{{ $t(tech + '-value') }}</v-progress-circular>
       </div>
       <div class="skillInfo">
-        <div class="skillName">{{ skill.name }}</div>
-        <div class="skillDegreeYear">{{ skill.degree }}, {{ skill.year }}</div>
-        <div class="skillDescription">{{ skill.description }}</div>
+        <div class="skillName">{{ $t(tech + '-name') }}</div>
+        <div class="skillDegreeYear">{{ $t(tech + '-degree') }}, {{ $t(tech + '-year') }}</div>
+        <div class="skillDescription">{{ $t(tech + '-description') }}</div>
       </div>
     </div>
   </div>
@@ -29,12 +29,13 @@ export default {
 
   data() {
     return {
+      techs: ['html5', 'css3', 'vue', 'js', 'jQuery'],
       skills: [
         {
           paintValue: "90",
           value: "90%",
-          name: "html5",
-          degree: "Excellent",
+          name: "HTML5",
+          degree: "excellent",
           year: "1 year",
           description:
             "Able to develop independently with HTML and HTML5, had some practice daily"
@@ -51,7 +52,7 @@ export default {
         {
           paintValue: "60",
           value: "60%",
-          name: "Vue.js",
+          name: "VUE.JS",
           degree: "so-so",
           year: "1 year",
           description:
@@ -60,7 +61,7 @@ export default {
         {
           paintValue: "40",
           value: "40%",
-          name: "Javascript (ES6)",
+          name: "JAVASCRIPT (ES6)",
           degree: "raw",
           year: "1 year",
           description:
@@ -69,7 +70,7 @@ export default {
         {
           paintValue: "40",
           value: "40%",
-          name: "JQuery",
+          name: "JQUERY",
           degree: "raw",
           year: "1 year",
           description:

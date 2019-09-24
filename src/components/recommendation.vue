@@ -2,7 +2,7 @@
   <div class="carousel">
     <div class="containerRecommendation">
       <div class="slider">
-        <div class="slide" v-for="(recommendation, index) in recommendations" :key="index">
+        <div class="slide" v-for="(manager, index) in managers" :key="index">
           <div class="iconHolder">
             <svg style="width:36px;height:36px" viewBox="0 0 24 24">
               <path fill="#fff" d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z" />
@@ -10,10 +10,10 @@
           </div>
 
           <div class="recommedationText">
-            <p>{{ recommendation.quote }}</p>
+            <p v-html="$t(manager + '-quote')"></p>
             <div class="source">
-              <div class="name">{{ recommendation.name }}</div>
-              <div class="position">{{ recommendation.position }}</div>
+              <div class="name">{{ $t(manager + '-name') }}</div>
+              <div class="position">{{ $t(manager + '-position') }}</div>
             </div>
             <br />
           </div>
@@ -33,6 +33,7 @@ export default {
   props: {},
   data() {
     return {
+      managers: ['dan1', 'cissy', "dan2"],
       recommendations: [
         {
           quote:
