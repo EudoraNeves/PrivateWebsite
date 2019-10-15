@@ -14,7 +14,7 @@
         <mediaIcons iconsClassName="mediasHeader" iconClassName="mediaHeader"></mediaIcons>
         <div class="hireDownload">
           <div class="locale-changer">
-            <select v-model="$i18n.locale">
+            <select v-model="$i18n.locale" class="locale-select" @click="setDownloadCV()">
               <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.abbreviation">
                 <img :src="lang.flag" />
                 {{ lang.text }}
@@ -25,7 +25,7 @@
           <a href="tel: 15355156713">
             <hireDownload :buttonText="$t('buttonText1')"></hireDownload>
           </a>
-          <a :href="`${publicPath}cv_eudora.docx`" download>
+          <a :href="`${publicPath}haina_cv-${locale.toUpperCase()}.docx`" download>
             <hireDownload :buttonText="$t('buttonText2')"></hireDownload>
           </a>
         </div>
@@ -124,7 +124,8 @@ export default {
           text: "English",
           flag: require("../assets/imgs/uk.png")
         }
-      ]
+      ],
+      locale: "en"
     };
   },
 
@@ -202,6 +203,11 @@ export default {
     backToTop() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    },
+
+    setDownloadCV() {
+      let e = document.getElementsByClassName("locale-select")[0]
+      this.locale = e.options[e.selectedIndex].value;
     }
 
     // changeSVG() {
@@ -221,6 +227,7 @@ export default {
     this.wechat();
     this.topBtnAppear();
     // this.changeSVG();
+    //this.cv();
   }
 };
 </script>
@@ -246,7 +253,6 @@ button:hover {
 }
 
 .header {
-  /* height: 717px; */
   color: white;
   display: flex;
   flex-direction: column;
@@ -429,7 +435,16 @@ h3 {
   margin-right: 10px;
   margin-top: 10px;
   outline: none;
+  font-size: 12px;
+  select {
+    padding: 3px;
+    outline: none;
+    option {
+      background-color: transparent;
+    }
+  }
 }
+
 @media only screen and (max-width: 414px) {
   .mediaHeader {
     width: 24px;
