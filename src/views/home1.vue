@@ -72,8 +72,18 @@
           <div class="cssAnimation">
             <h1 class="cssAnimationTitlle">CSS (canvas, animation)</h1>
             <div class="cssAnimationWork">
-              <canvass></canvass>
-              <wavyCircle></wavyCircle>
+              <div class="animation">
+                <h4>canvas:</h4>
+                <canvass></canvass>
+              </div>
+              <div class="animation">
+                <h4>animation:</h4>
+                <wavyCircle></wavyCircle>
+              </div>
+              <div class="animation">
+                <h4>animation+JS:</h4>
+                <animationStar></animationStar>
+              </div>
             </div>
           </div>
         </div>
@@ -103,8 +113,9 @@ import projects from "@/components/projects.vue";
 import axios from "axios";
 // import JQuery from "JQuery";
 import canvass from "@/components/canvass.vue";
-import skill from "@/components/skill.vue";
 import wavyCircle from "@/components/wavyCircle.vue";
+import animationStar from "@/components/animationStar.vue";
+import skill from "@/components/skill.vue";
 import getInTouch from "@/components/getInTouch.vue";
 
 export default {
@@ -141,6 +152,7 @@ export default {
     recommendation,
     projects,
     canvass,
+    animationStar,
     skill,
     wavyCircle,
     getInTouch
@@ -206,7 +218,7 @@ export default {
     },
 
     setDownloadCV() {
-      let e = document.getElementsByClassName("locale-select")[0]
+      let e = document.getElementsByClassName("locale-select")[0];
       this.locale = e.options[e.selectedIndex].value;
     }
 

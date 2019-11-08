@@ -55,8 +55,7 @@ export default {
           name: "VUE.JS",
           degree: "so-so",
           year: "1 year",
-          description:
-            "Understand basic concepts of Vue.js, able to develop independently. Had some practice daily."
+          description:"Understand basic concepts of Vue.js and its components library vuetify, able to develop independently. Had some practice daily."
         },
         {
           paintValue: "40",
@@ -74,13 +73,17 @@ export default {
           degree: "raw",
           year: "1 year",
           description:
-            "Understand basic concepts of JQuery, had some practice daily but need to check for help online frequently."
+            "Understand basic concepts of jQuery. Familiar with its plugins like pictures' lazy-loading, full-page scrolling, bootstrap and its components and plugins, etc."
         }
       ]
     };
   },
 
-  methods: {}
+  methods: {
+    whatever() {
+      return JSON.stringify(this.skills)
+    }
+  }
 };
 </script>
 

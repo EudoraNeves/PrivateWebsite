@@ -95,7 +95,8 @@ export default {
 
 <style lang="scss" scoped>
 canvas {
-  height: 180px;
+  margin: 60px 0!important;
+  height: 186px;
   background: #000000;
   box-sizing: border-box;
   margin: auto 0;
