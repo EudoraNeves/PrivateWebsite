@@ -254,6 +254,10 @@ export default {
   font-weight: 400;
 }
 
+body {
+  max-height: 100%;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
