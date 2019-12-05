@@ -96,6 +96,12 @@
   "eudora-tech": "Vue.js, html, css, javascript",
   "eudora-source": "https://github.com/EudoraNeves/PrivateWebsite",
 
+  "filioe-imgUrl": "require('../assets/imgs/filipe.png')",
+  "filipe-name": "Filipe's website",
+  "filipe-tech": "Vue.js(vue-router, vuex, vue-meta, vue-lazyload, element-ui, axios, etc), html, sass, javascript",
+  "filipe-source": "https://github.com/EudoraNeves/filipe-web",
+
+
   "self-introduction": "I'm a new mummy and started self learning of web front-end developing since my pregnancy in March, 2018. During the time staying at home, I spent around 4 hours daily during weekdays on learning and practising. My husband, a senior developer thinks I'm doing okay and should be good for the first job. <strong>So contact me if you're interested in hiring (currently living in Shanghai)</strong>",
   "service": "<strong>Also, if you're just seeking for a small projects building, I'm also here. I can help with following:</strong>",
   "service1": "website modification / rebuiding",

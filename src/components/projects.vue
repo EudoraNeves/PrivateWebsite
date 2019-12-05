@@ -19,7 +19,7 @@ export default {
   props: {},
   data() {
     return {
-      webs: ['weather', 'artifact', 'eudora'],
+      webs: ['weather', 'artifact', 'eudora', 'filipe'],
     };
   }
 };
@@ -37,7 +37,7 @@ export default {
 .project {
   background-color: #00bcd4;
   width: 247.5px;
-  height: 295.781px;
+  height: 330px;
   margin: 0 15px;
   margin-bottom: 30px;
   flex: 1;
