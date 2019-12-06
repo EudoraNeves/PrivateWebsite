@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      companies: ['vado', 'fesco', 'kejian'],
+      companies: ['têdêcar', 'vado', 'fesco', 'kejian'],
 
       education: [
         {

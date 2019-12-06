@@ -17,6 +17,13 @@
     "projects": "项目经验",
     "get-in-touch": "联系方式",
 
+    "têdêcar-name": "Têdêcar Autocaravanas Ltd",
+    "têdêcar-time": "2018/4 ~ 2018/11",
+    "têdêcar-link": "",
+    "têdêcar-title": "web前端实习",
+    "têdêcar-description": "工作职责:\n *将老版本的公司内部windows应用（Delphi开发）CRM系统搬运到网页版并进行优化。包括：\n 1. 建立相应的VUE项目\n 2. 将旧版windows应用表单等内容转移到新建的网页上\n 3. 完成表单等前端内容与后端API的连接\n 4. 美化网页排版，优化更新网页内容",
+    "têdêcar-logo": "",  
+
     "vado-name": "英国维多有限公司",
     "vado-time": "2017/4 ~ 2018/3",
     "vado-link": "https://www.vado.com/",
@@ -115,8 +122,8 @@
 
       "self-introduction": "本人半路出道，08年3月份产后开始自学前端技术。带娃期间每日操练，相关技能日趋见长，本人老公Filipe是一名资深软件工程师，以他专业角度判断我已完全可以胜任初级程序员这一角色。<strong>如果你对我感兴趣，请联系我。</strong> 目前我住在上海市虹口区。",
       "service": "<strong>另外，我还可以帮助您完成以下工作：</strong>",
-      "service1": "网页改版、重建",
-      "service2": "迷你小程序开发",
+      "service1": "网页改版、创建",
+      "service2": "中英互译",
       "email": "期待您的联系： 邮件至",
       "call": " 或致电"
     

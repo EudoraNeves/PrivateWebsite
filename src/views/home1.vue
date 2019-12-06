@@ -25,7 +25,7 @@
           <a href="tel: 15355156713">
             <hireDownload :buttonText="$t('buttonText1')"></hireDownload>
           </a>
-          <a :href="`${publicPath}haina_cv-${locale.toUpperCase()}.docx`" download>
+          <a :href="`${publicPath}haina_cv-${locale.toUpperCase()}.pdf`" download>
             <hireDownload :buttonText="$t('buttonText2')"></hireDownload>
           </a>
         </div>

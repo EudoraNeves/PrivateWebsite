@@ -6,7 +6,7 @@
     <div class="introText">
       <h1 class="name">{{ name }}</h1>
       <div class="profession">{{ profession }}</div>
-      <div class="briefIntro">{{ briefIntro }}</div>
+      <div class="briefIntro" v-html="$t('briefIntro')"></div>
     </div>
   </div>
 </template>

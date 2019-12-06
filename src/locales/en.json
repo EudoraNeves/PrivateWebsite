@@ -3,7 +3,7 @@
   "buttonText2": "get CV",
   "name": "Eudora Neves",
   "profession": "Web Front-end Developer",
-  "briefIntro": "My major was English and I've been trying to take full use of it, but unfortunately, I was not quitegit ps sure what I want until now. I feel appreciated with my husband who helped bring me to software developing and i found it's my direction to go.",
+  "briefIntro": "Self learning Adobe XD, Html5, Css3/Sass, Javascript(ES6), JQuery, Vue.js(vue-router, vuex, vue-lazyload, vue-meta, element-ui, SEO, etc.), etc.<br /> 1、Use design tool like Adobe XD to construct the web pages.<br /> 2、Design and code modularized website based on components to improve the efficiency.<br /> 3、Good at front-end techs like HTML5，CSS3，Sass/Less, JavaScript (ES6)，JQuery and its plugins like bootstrap, etc, VUE and its plugins like vuetify, vue-router, vue-store, vue-lazyload, vue-meta, vuex, etc.<br /> 4、Use all kinds of plugins like full-page scrolling to improve UI, lazy-loading to improve web speed, also pay attention to device responsive design and compatibility.<br /> 5、Good at animate and interactive effects.<br /> 6、Know Git, NPM, github, visual studio code, etc.<br /> 7、Know basic concepts of ajax request techs like axios, ajax, and can use them to communicate with API calls from the backend in different platforms.",
   "nav-experience": "Experience",
   "nav-education": "Education",
   "nav-recommendation": "Recommendation",
@@ -14,6 +14,14 @@
   "recommendation": "recommendation letters",
   "projects": "projects",
   "get-in-touch": "get in touch",
+
+  "têdêcar-name": "Têdêcar Autocaravanas Ltd",
+  "têdêcar-time": "2018/4 ~ 2018/11",
+  "têdêcar-link": "https://www.vado.com/",
+  "têdêcar-title": "web front-end intern",
+  "têdêcar-description": "JOB RESPONSIBILITIES:\n *The role at this company was to develop a Vue application that served as the frontend for an existing set of APIs that are connected to the company's CRM/order system.\n *The previous solution was no longer supported on newer operative systems, hence the need to migrate it to newer technologies. My responsibilities included:\n - Set up a new Vue project, including source control.\n - Migrate old Windows forms to web forms.\n - Connect all the forms to the right APIs.\n - Modernize the overall look of the application, made it simpler to use, and removed fields that were no longer used or needed to be changed. ",
+  "têdêcar-logo": "../assets/imgs/têdêcar.png",
+
   "vado-name": "VADO",
   "vado-time": "2017/4 ~ 2018/3",
   "vado-link": "https://www.vado.com/",
@@ -102,10 +110,10 @@
   "filipe-source": "https://github.com/EudoraNeves/filipe-web",
 
 
-  "self-introduction": "I'm a new mummy and started self learning of web front-end developing since my pregnancy in March, 2018. During the time staying at home, I spent around 4 hours daily during weekdays on learning and practising. My husband, a senior developer thinks I'm doing okay and should be good for the first job. <strong>So contact me if you're interested in hiring (currently living in Shanghai)</strong>",
+  "self-introduction": "Contact me if you're interested in hiring (currently living in Shanghai)</strong>",
   "service": "<strong>Also, if you're just seeking for a small projects building, I'm also here. I can help with following:</strong>",
-  "service1": "website modification / rebuiding",
-  "service2": "mini program developing",
+  "service1": "website modification / buiding",
+  "service2": "Chinese-English translation",
   "email": "Drop me a line at",
   "call": " or call me at"
 
