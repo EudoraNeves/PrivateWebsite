@@ -2,8 +2,8 @@
   <div class="education">
     <div class="educationItem" v-for="(school, index) in schools" :key="index">
       <h3 class="degree">{{ $t(school + '-degree') }}</h3>
-      <div class="construction">{{ $t(school + '-school') }}</div>
-      <div class="time">{{ $t(school + '-time') }}</div>
+      <div class="construction"><a :href="$t(school + '-schoolWebsite')">{{ $t(school + '-school') }}</a></div>
+      <div class="time">{{ $t(school + '-time') + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + $t(school + '-location') }}</div>
       <br />
       <div class="description" v-html="$t(school + '-description')"></div>
     </div>
@@ -14,14 +14,10 @@
 export default {
   name: "education",
   props: {
-    // companyImgSrc: String,
-    // companyName: String,
-    // title: String,
-    // description: String
   },
   data() {
     return {
-      schools: ['sololearn', 'university'],
+      schools: ['numericALL', 'sololearn', 'university'],
     };
   },
 
@@ -39,6 +35,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  color: #8a8a8a;
+}
 .education {
   display: flex;
   flex-direction: row;

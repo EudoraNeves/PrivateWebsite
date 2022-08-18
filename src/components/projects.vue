@@ -19,13 +19,16 @@ export default {
   props: {},
   data() {
     return {
-      webs: ['weather', 'artifact', 'eudora', 'filipe'],
+      webs: ['task-manager', 'weather', 'artifact', 'eudora'],
     };
   }
 };
 </script>
 
 <style scoped>
+a {
+  color: white;
+}
 .projectsContainer {
   display: flex;
   flex-direction: row;

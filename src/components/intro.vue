@@ -1,7 +1,7 @@
 <template>
   <div class="intro">
     <div class="selfie">
-      <img :src="`${publicPath}selfie.jpg`" />
+      <img :src="`${publicPath}profile-photo.png`" />
     </div>
     <div class="introText">
       <h1 class="name">{{ name }}</h1>
@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .selfie img {
   width: 160px;
-  height: 160px;
+  height: 180px;
   margin: 0 auto;
   border-radius: 50%;
   border: 4px solid #ffffff;
