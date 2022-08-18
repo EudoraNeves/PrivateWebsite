@@ -34,7 +34,7 @@
         <intro :name="$t('name')" :profession="$t('profession')" :briefIntro="$t('briefIntro')"></intro>
       </div>
       <div class="thirdLine">
-        <contact email="hainazheng1991@outlook.com" phone="+352 621522397" web="https://privatewebsite-iyc24qisd.now.sh/#/"></contact>
+        <contact email="hainazheng1991@outlook.com" phone="+352 621522397" web="https://privatewebsite-haina.vercel.app/"></contact>
       </div>
       <div class="fourthLine">
         <navigators></navigators>
