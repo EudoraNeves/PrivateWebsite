@@ -1,7 +1,7 @@
 <template>
   <div class="getInTouch">
     <div class="profile">
-      <img :src="`${publicPath}selfie.jpg`" />
+      <img :src="`${publicPath}profile-photo.png`" />
     </div>
     <div class="text">
       <p v-html="$t('self-introduction')"></p>
@@ -26,8 +26,8 @@
       </ul>
       <p>
         {{ $t('email') }}
-        <a href="mailto:1052288068@qq.com">1052288068@qq.com</a> {{ $t('call') }}
-        <a href="tel:008615355156713">+86 15355156713</a>
+        <a href="mailto:1052288068@qq.com">hainazheng1991.com</a> {{ $t('call') }}
+        <a href="tel:008615355156713">+352 621522397</a>
       </p>
       <mediaIcons iconsClassName="mediasBottom" iconClassName="mediaBottom"></mediaIcons>
     </div>
@@ -59,7 +59,7 @@ export default {
 }
 .profile img {
   width: 120px;
-  height: 120px;
+  height: 130px;
   margin: 0 auto;
   border-radius: 50%;
 }
