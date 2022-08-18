@@ -25,7 +25,7 @@
           <a href="tel: 15355156713">
             <hireDownload :buttonText="$t('buttonText1')"></hireDownload>
           </a>
-          <a :href="`${publicPath}haina_cv-${locale.toUpperCase()}.pdf`" download>
+          <a :href="`${publicPath}cv_Junior-front-end-developer_haina_29-07-${locale.toUpperCase()}.pdf`" download>
             <hireDownload :buttonText="$t('buttonText2')"></hireDownload>
           </a>
         </div>
@@ -34,7 +34,7 @@
         <intro :name="$t('name')" :profession="$t('profession')" :briefIntro="$t('briefIntro')"></intro>
       </div>
       <div class="thirdLine">
-        <contact email="1052288068@qq.com" phone="+86 15355156713" web="https://haina.website"></contact>
+        <contact email="hainazheng1991@outlook.com" phone="+352 621522397" web="https://privatewebsite-haina.vercel.app/"></contact>
       </div>
       <div class="fourthLine">
         <navigators></navigators>
@@ -176,14 +176,14 @@ export default {
 
     downloadFile() {
       axios({
-        url: "../assets/imgs/cv_eudora.docx",
+        url: "../assets/imgs/cv_Junior-front-end-developer_haina_29-07.pdf",
         method: "GET",
         responseType: "blob" // important
       }).then(response => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
         const link = document.createElement("a");
         link.href = url;
-        link.setAttribute("download", "eudoraCV.docx"); //or any other extension
+        link.setAttribute("download", "cv_Junior-front-end-developer_haina_29-07.pdf"); //or any other extension
         document.body.appendChild(link);
         link.click();
       });
