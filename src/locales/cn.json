@@ -109,11 +109,17 @@
       "dan2-name": "Dan Carter",
       "dan2-position": "中国区域经理，英国维多有限公司宁波代表处",
 
+      "flower_shop-imgUrl": "require('../assets/imgs/flower_shop.png')",
+      "flower_shop-name": "花店",
+      "flower_shop-tech": "html, css, JavaScript, Laravel(php)",
+      "flower_shop-source": "https://github.com/EudoraNeves/flower_shop.git",
+      "github": "查看github代码",
+    
+
       "task-manager-imgUrl": "require('../assets/imgs/task-manager.png')",
       "task-manager-name": "任务管理器",
       "task-manager-tech": "html, css, JavaScript, React, Json Server",
       "task-manager-source": "https://github.com/EudoraNeves/task-manager",
-      "github": "查看github代码",
     
 
       "weather-imgUrl": "require('../assets/imgs/projectWeather.png')",
