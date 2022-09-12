@@ -91,13 +91,13 @@
       "js-name": "JAVASCRIPT (ES6)",
       "js-degree": "生疏",
       "js-year": "1年",
-      "js-description": "日常操练，理解基础概念，不能够独立快速编程，需要频繁借助网上或他人。",
+      "js-description": "日常操练，掌握基础概念，能够独立快速编写常见基本运算。对于复杂运算，基于其他辅助手段也基本能够学习和运用",
       "jQuery-paintValue": "40",
       "jQuery-value": "40%",
       "jQuery-name": "JQUERY",
       "jQuery-degree": "生疏",
       "jQuery-year": "1年",
-      "jQuery-description": "日常操练，理解基础概念，不能够独立快速编程，需要频繁借助网上或他人。",
+      "jQuery-description": "日常操练，理解基础概念，能够结合其他编程语言，有效编写简单运算程序",
 
       "dan1-quote": "I've been extremely impressed with not only your ability and intelligence, but also your attitude towards the work you are doing. It is so lovely to see someone so much wanting to get things right and accurate.\n <br /> 你的能力、才智以及对工作的态度令我印象深刻。你总是能够将工作快速而准确得完成。\n <br /> <br /> I am of the strong belief that you are going to so well in Vado, and you are already one of our highly valued members of staff. \n <br /> 我对你在Vado得表现给予最高的肯定，并毫不夸张得说，你已经成为我司重点培养目标之一。",
       "dan1-name": "Dan Carter",
@@ -109,11 +109,17 @@
       "dan2-name": "Dan Carter",
       "dan2-position": "中国区域经理，英国维多有限公司宁波代表处",
 
+      "flower_shop-imgUrl": "require('../assets/imgs/flower_shop.png')",
+      "flower_shop-name": "花店",
+      "flower_shop-tech": "html, css, JavaScript, Laravel(php)",
+      "flower_shop-source": "https://github.com/EudoraNeves/flower_shop.git",
+      "github": "查看github代码",
+    
+
       "task-manager-imgUrl": "require('../assets/imgs/task-manager.png')",
       "task-manager-name": "任务管理器",
       "task-manager-tech": "html, css, JavaScript, React, Json Server",
       "task-manager-source": "https://github.com/EudoraNeves/task-manager",
-      "github": "查看github代码",
     
 
       "weather-imgUrl": "require('../assets/imgs/projectWeather.png')",

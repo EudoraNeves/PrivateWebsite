@@ -19,7 +19,7 @@ export default {
   props: {},
   data() {
     return {
-      webs: ['task-manager', 'weather', 'artifact', 'eudora'],
+      webs: ['flower_shop','task-manager', 'weather', 'artifact', 'eudora'],
     };
   }
 };

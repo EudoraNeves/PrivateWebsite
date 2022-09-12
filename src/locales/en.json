@@ -102,11 +102,16 @@
   "dan2-name": "Dan Carter",
   "dan2-position": "area sales manager, Vado",
 
+  "flower_shop-imgUrl": "require('../assets/imgs/flower_shop.png')",
+  "flower_shop-name": "flower_shop",
+  "flower_shop-tech": "html, css, JavaScript, Laravel(php)",
+  "flower_shop-source": "https://github.com/EudoraNeves/flower_shop.git",
+  "github": "View on Github",
+  
   "task-manager-imgUrl": "require('../assets/imgs/task-manager.png')",
   "task-manager-name": "Task Manager",
   "task-manager-tech": "html, css, JavaScript, React, Json Server",
   "task-manager-source": "https://github.com/EudoraNeves/task-manager",
-  "github": "View on Github",
 
 
   "weather-imgUrl": "require('../assets/imgs/projectWeather.png')",
